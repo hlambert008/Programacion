@@ -1,0 +1,25 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#include "math.h"
+
+using namespace std;
+
+int main()
+{
+	int A, B, C;
+	float Area, S;
+	cout << "Ingrese Lado 1: ";
+	cin >> A;
+	cout << "Ingrese Lado 2: ";
+	cin >> B;
+	cout << "Ingrese Lado 3: ";
+	cin >> C;
+	S = (A+B+C)/2;
+	Area = sqrt(S*(S-A)*(S-B)*(S-C));
+	cout << "El area es: ";
+    cout << Area;
+	getch();
+
+	return 0;
+}
