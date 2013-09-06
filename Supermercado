@@ -1,0 +1,30 @@
+#include "stdafx.h"
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#include "math.h"
+
+using namespace std;
+
+int main()
+{
+	float S, A, B, C, C1, C2, C3;
+	cout << "Ingrese Precio 1: ";
+	cin >> A;
+	cout << "Ingrese Cantidad 1: ";
+	cin >> C1;
+	cout << "Ingrese Precio 2: ";
+	cin >> B;
+	cout << "Ingrese Cantidad 2 ";
+	cin >> C2;
+	cout << "Ingrese Precio 3: ";
+	cin >> C;
+	cout << "Ingrese Cantidad 3 ";
+	cin >> C3;
+	S = (A*C1) + (B*C2) + (C*C3);
+	cout << "El Total es: ";
+    cout << S;
+	getch();
+
+	return 0;
+}
