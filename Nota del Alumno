@@ -1,0 +1,31 @@
+#include "stdafx.h"
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#include "math.h"
+
+using namespace std;
+
+int main()
+{
+	float NF, NP, P1, P2, P3, N, NPF, P;
+	cout << "Ingrese Parcial 1: ";
+	cin >> P1;
+	cout << "Ingrese Parcial 2: ";
+	cin >> P2;
+	cout << "Ingrese Parcial 3: ";
+	cin >> P3;
+	cout << "Ingrese Nota Practica: ";
+	cin >> NP;
+	cout << "Ingrese Nota de Proyecto: ";
+	cin >> P;
+	cout << "Ingrese Nota Final: ";
+	cin >> NF;
+	NPF = (((P1+P2+P3)/3)*(0.45));
+	N = NPF + (NP*0.1)+(NF*0.3)+(P*0.15);
+	cout << "La Nota del alumno es: ";
+    cout << N;
+	getch();
+
+	return 0;
+}
