@@ -1,0 +1,25 @@
+#include "stdafx.h"
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#include "math.h"
+
+using namespace std;
+
+
+int main()
+{
+	float A, V, D, R;
+	cout << "Ingrese el Diametro:\n\n  ";
+	cin >> D;
+	R = D/2;
+	A = 4*3.1416*pow(R,2);
+	V = (4*3.1416*pow(R,3))/3;
+	cout << "\n\nEl area de la esfera es:\n\n ";
+	cout << A;
+	cout << "\n\nEl Volumen de la esfera es:\n\n ";
+	cout << V;
+	getch();
+
+	return 0;
+}
