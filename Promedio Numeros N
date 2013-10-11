@@ -1,0 +1,27 @@
+// Promedio numeros N.cpp : Defines the entry point for the console application.
+//172.16.5.13
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+
+
+int main()
+{ 
+ float N, S, I, Dato, Prom;
+	 cout<< "Leer N Numeros: ";
+     cin>> N;
+	 S=0;
+	 for (I=0;I<N;I++);
+	   {
+	    cout<< "Ingrese Dato: ";
+	    cin>> Dato;
+	    S=S+Dato;
+	   } 
+	   Prom = S/N;
+	   cout<< "El Promedio es: " <<Prom; 
+	   getch();
+	   return 0;
+}
