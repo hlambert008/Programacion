@@ -1,0 +1,49 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+
+Long Invert(long x);
+
+int main()
+{
+   int N, i, cont;
+   long A, B;
+
+   cout << "Ingrese el Numero Entero N: ";
+   cin >> N;
+   for( i=0; i<N; i++)
+   {
+      cout << " Ingrese el Numero: ";
+      cin  >> A;
+      cont = 0;
+      while( cont < 100 )
+      {
+         B = Invert(A);
+         if( A == B )
+         {
+            cout << " El Numero es: " 
+            cin  >> A << endl;
+            break;
+         } else
+            A = A + B;
+            cont ++;
+      }
+      if( cont == 100 )
+          cout << "Imposible" << endl;
+   }
+
+        return 0;
+}
+
+long Invert(long x)
+{
+   long aux = 0;
+   while( x > 0 )
+   {
+      aux = aux*10 + x%10;
+      x = x / 10;
+   }
+   return aux;
+}
