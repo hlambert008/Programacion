@@ -1,0 +1,46 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{float gr,Hg,hu,t,i,j,S,pt,iac,p,a,
+ Hg=0;
+ S=0;
+cout << " Ingrese la cantidad de granjas: ";
+cin  >> gr;
+cout<< "\n";
+ for (i=1;i<=gr;i++)
+ { cout << " Ingrese la cantidad de Huevos por Granja: ";
+   cin  >> hu;
+   Hg=Hg+hu;
+    for(j=1;j<=hu;j++)
+        {do
+         {
+
+         cout << "Ingresa el Tamaño del Huevo: "
+         cin  >> c2;
+         cin  >> t;
+         S=S+t;
+
+         }while(t <0 && t> 15);
+         }pt = (s/Hg);
+         cout << "Ingrese el promedio de Huevos que pone cada Gallina: ";
+         cin  >> a;
+         iac = (hu/a);
+     
+         if (iac > 5)
+            p = 5;
+         else p = 4;
+ }  cout << "El costo de los huevos Pomedio sera:"
+    cinn >> p;
+    cout << "\n";
+    cout << "El promedio de Tamaño es: ";
+    cin  >> pt;
+    cout <<"\n\n";
+    cout <<"El iac es: ";
+    ciin << iac;
+    cout<<"\n\n";
+getch();        
+ return 0;
+}
