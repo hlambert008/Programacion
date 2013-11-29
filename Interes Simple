@@ -1,0 +1,21 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+int main()
+{
+ float K,i,I;
+ int n;
+ cout << "Ingrese K";
+ cin  >> K;
+ cout << "Ingrese i";
+ cin  >> i;
+ cout "Ingrese Numero n: ";
+ cin  >> n;
+ I=(K*i*n)/360;
+ cout << "El Interes es: ";
+ cin  >> I;
+
+getch();
+}
