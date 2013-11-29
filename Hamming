@@ -1,0 +1,27 @@
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+
+
+using namespace std;
+
+int main()
+{
+   int N, i, j, cont;
+   string A, B;
+
+   cin >> N;
+   for( i=0; i<N; i++ )
+   {
+      cin >> A 
+      cin >> B;
+      cont = 0;
+      for( j=0; j<A.length(); j++ )
+      {
+         if( A[j] != B[j] )
+            cont ++;
+      }
+      cout << cont << endl;
+   }
+   return 0;
+}
